@@ -1,0 +1,483 @@
+.load__icon {
+  animation: linear load 2s infinite;
+  width: 32px;
+  height: 32px;
+}
+
+.load__icon-wrap {
+  margin: auto;
+}
+
+.load {
+  height: calc(100vh - 16px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes load {
+  from {
+    transform: rotate(0deg) scale(2);
+  }
+  to {
+    transform: rotate(360deg) scale(2);
+  }
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+ul{
+    padding-left: 0px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+a,a:hover{
+    text-decoration: none;
+}
+@font-face {
+    font-family: "Nunito Sans Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Nunito Sans Regular"), url("../fonts/NunitoSans-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Nunito Sans SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Nunito Sans SemiBold"), url("../fonts/NunitoSans-SemiBold.woff") format("woff");
+}
+@font-face {
+    font-family: "Nunito Sans Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Nunito Sans Bold"), url("../fonts/NunitoSans-Bold.woff") format("woff");
+}
+.comn-btn{
+    background: #000894;
+    color: #ffffff;
+    border-radius: 55px;
+    padding: 12px 36px;
+    font-size: 14px;
+    font-family: "Nunito Sans SemiBold";
+}
+.comn-btn:hover{
+    color: #ffffff !important;
+}
+/************header-navbar-css-start***********/
+.header-section .navbar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.custome-navbar-style ul.navbar-nav {
+    padding-right: 24px;
+}
+.custome-navbar-style .navbar-nav li.nav-item {
+    color: #b6b6b6;
+    font-size: 14px;
+    padding: 0px 20px;
+    font-family: "Nunito Sans SemiBold";
+}
+.header-section .nav-link {
+    position: relative;
+}
+.header-section .nav-link.active,
+.header-section .nav-link:hover{
+    color: #000894 !important;
+}
+.header-section .nav-link.active::before,
+.header-section .nav-link:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    background: #000894;
+    bottom: 0px;
+    left: 50%;    
+    transform: translateX(-50%);
+    z-index: 1;
+    border-radius: 20px;
+}
+.button.btn.custome.button.style-header {
+    background: #000894;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Nunito Sans Regular";
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+.banner-section{
+    position: relative;
+}
+.banner-section::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/double-vector.png);
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: -120px;
+    left: 0px;
+}
+.navbar-light .navbar-toggler{
+    border-color: transparent !important;
+}
+.banner-right{
+    text-align: right;
+}
+/************header-navbar-css-end***********/
+.styling-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.banner-section .banner-left,
+.about-right, .our-left {
+    display: flex;
+    align-items: center;
+}
+.banner-section .banner-left h1 {
+    font-size: 42px;
+    color: #000000;
+    line-height: 54px;
+    font-family: "Nunito Sans Bold";
+}
+.banner-section .banner-left p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 54px;
+    font-family: "Nunito Sans Bold";
+    margin-bottom: 40px;
+}
+button.btn.custome.button.style-banner,
+button.btn.custome.button.style-about {
+    cursor: pointer;
+    background: #000894;
+    color: #ffffff;
+    border-radius: 55px;
+    padding: 12px 36px;
+    font-size: 14px;
+    font-family: "Nunito Sans SemiBold";
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+/************banner-section-End***********/
+/*our section*/
+.our-section{
+    position: relative;
+}
+.our-section::after{
+    content: "";
+    position: absolute;
+    background-image: url(../images/right-pay-bg.svg);
+    height: 100%;
+    bottom: 0px;
+    width: 100%;
+    z-index: -1;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+.our-right{
+    right: -10%;
+}
+/*about section*/
+.about-left img.img-fluid {
+    position: relative;
+    left: -21%;
+    z-index: 1;
+}
+.content-styling h4 {
+    font-size: 14px;
+    color: #000894;
+    margin-bottom: 25px;
+}
+/*footer-section*/
+.footer-section{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.footer-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-link{
+    color: #000894 !important;
+    font-size: 14px;
+    font-family: "Nunito Sans SemiBold";
+}
+.footer-link span{
+    color: #4E4E4E !important;
+}
+/*contact-section*/
+.contact-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.contact-section::after{
+    content: "";
+    position: absolute;
+    background-image: url(../images/vector-round1.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    bottom: -150px;
+    left: -150px;
+}
+.contact-section::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/vector-round2.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    bottom: -150px;
+    left: 70%;
+}
+.contact-area .form-control{
+    height: 50px;
+    border: 0px solid transparent;
+    box-shadow: 0px 3px 30px 0px #00000014;
+}
+.contact-area textarea.form-control{
+    height: 150px;
+}
+.comn-section-heading{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.comn-section-heading h4{
+    font-size: 14px;
+    color: #000894;
+    margin-bottom: 20px !important;
+}
+.comn-section-heading h1{
+    font-size: 32px;
+}
+.contact-area .comn-btn{
+    margin-top: 10px;
+    padding: 8px 36px;
+}
+/*testimonial slider*/
+.testimonial-content{
+    position: relative;
+}
+.testimonial-content p{
+    font-size: 18px;
+    font-style: italic;
+    color: #8293AF;
+    padding-right: 50px;
+}
+.testimonial-profile-img{
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.testimonial-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+.testimonial-name{
+    color: #000000;
+    font-size: 18px;
+}
+.testimonial-position{
+    color: #B6B6B6;
+    font-size: 14px;
+}
+.quote-icon{
+    width: 102px !important;
+    height: 76px !important;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+    z-index: 999;
+    opacity: 1;
+}
+.testimonial-section{
+    position: relative;
+}
+.owl-nav{
+    margin-top: 25px;
+}
+.owl-prev{
+    margin-right: 15px;
+}
+.owl-prev,
+.owl-next{
+    width: 35px;
+    height: 36px;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 0px;
+    box-shadow: 0px 0px 10px #ddd;
+    font-size: 30px;
+    position: relative;
+}
+.testimonial-left-img{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.owl-prev:focus,
+.owl-next:focus{
+    outline: 0px !important;
+}
+.owl-prev span,
+.owl-next span{
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+button:focus{
+    outline: 0px !important;
+}
+/*media query start*/
+@media(max-width: 992px){
+    .banner-section{
+        padding-top: 40px;
+    }
+    .banner-section .banner-left, .about-right, .our-left {
+        justify-content: center;
+    }
+    .banner-right{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .banner-section .banner-left p {
+        line-height: unset; 
+        margin-bottom: 20px;
+    }
+    .banner-section .banner-left h1 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .about-left img.img-fluid {
+        left: unset;
+    }
+    .about-left{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .our-right {
+        right: unset;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .our-section::after {
+        background-image: unset;
+    }
+    .testimonial-left-img{
+        display: none;
+    }
+
+    .footer-area {
+        display: flex;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .footer-navbar-section{
+        display: none;
+    }
+    .footer-section .navbar-nav{
+        flex-direction: row !important;
+    }
+    .footer-section .nav-item:not(:last-child){
+        padding-right: 10px;
+    }
+    .custome-navbar-style .navbar-nav li.nav-item.active a::before {
+        left: 10px;
+    }
+    .custome-navbar-style .navbar-nav li.nav-item {
+        padding: 5px 20px;
+    }
+    .header-section .navbar {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .header-section .nav-link.active::before, .header-section .nav-link:hover::before {
+        left: 2px;
+        transform: unset;
+    }
+}
+@media(max-width: 768px){
+    .footer-section .navbar-nav{
+        flex-direction: column !important;
+    }
+    .footer-section .nav-item:not(:last-child){
+        padding-right: unset;
+    }
+}
+@media(max-width: 576px){
+    .our-content,
+    .banner-content,
+    .about-content{
+        text-align: center;
+    }
+
+    .testimonial-section .carousel-item {
+        position: relative;
+        min-height: 400px;
+    }
+    .contact-section::after{
+        background-image: unset;
+    }
+    .contact-section::before{
+        background-image: unset;
+    }
+
+    .testimonial-content p {
+        padding-right: 0px;
+    }
+    .owl-nav {
+        display: flex;
+        justify-content: center;
+    }
+    ..content-styling h4{
+        font-size: 14px;
+        color: #000894;
+        margin-bottom: 5px;
+
+    }
+    .styling-section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .contact-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+}
